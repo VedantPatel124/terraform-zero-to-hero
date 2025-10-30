@@ -2,14 +2,14 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "abhishek" {
+resource "aws_instance" "vedant" {
   instance_type = "t2.micro"
-  ami = "ami-053b0d53c279acc90" # change this
-  subnet_id = "subnet-019ea91ed9b5252e7" # change this
+  ami = "ami-0cfde0ea8edd312d4" # change this
+  subnet_id = "subnet-07ac8fa64f082a715" # change this
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "abhishek-s3-demo-xyz" # change this
+  bucket = "vedant-s3-demo" # change this
 }
 
 resource "aws_dynamodb_table" "terraform_lock" {
